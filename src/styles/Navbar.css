@@ -1,0 +1,78 @@
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 2rem;
+    height: 60px;
+    background-color: rgba(246, 244, 244, 0.991);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-brand {
+    margin-right: 3rem;
+  }
+  
+  .navbar-brand a {
+    text-decoration: none;
+    color: #2c3e50;
+  }
+  
+  .navbar-brand h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #3498db;
+  }
+  
+  /* Instagram Icon Styling */
+  .navbar-links a svg[data-icon="instagram"] {
+    font-size: 1.5rem;
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(1);
+    transition: filter 0.3s ease;
+  }
+  
+  .navbar-links a:hover svg[data-icon="instagram"] {
+    filter: brightness(1.2);
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0 1rem;
+    }
+    
+    .navbar-brand {
+      margin-right: 1.5rem;
+    }
+    
+    .navbar-links {
+      gap: 1rem;
+    }
+    
+    .navbar-brand h1 {
+      font-size: 1.2rem;
+    }
+  } 
